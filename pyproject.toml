@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "brain-disease-diagnosis"
+version = "0.1.0"
+description = "This is a brain disease diagnosis application which detects the disease related to brain and provide proper guide to how to deal with it"
+authors = ["nidhi-2619 <91557785+nidhi-2619@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^4.2.5"
+djangorestframework = "^3.14.0"
+drf-spectacular = "^0.26.4"
+python-dotenv = "^1.0.0"
+isort = "^5.12.0"
+flake8 = "^6.1.0"
+pre-commit-hooks = "^4.4.0"
+
+[tool.poetry.group.dev.dependencies]
+mysqlclient = "^2.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
