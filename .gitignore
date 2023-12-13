@@ -115,15 +115,15 @@ __pypackages__/
 # Celery stuff
 celerybeat-schedule
 celerybeat.pid
-
+node_modules/
 # SageMath parsed files
 *.sage.py
 
 # Environments
 .env
-.venv
-env/
 venv/
+env/
+.venv/
 ENV/
 env.bak/
 venv.bak/

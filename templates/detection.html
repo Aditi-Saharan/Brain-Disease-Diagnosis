@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Tumor Detection</title>
+</head>
+<body>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="image">Upload MRI Brain Scan Image:</label>
+    <input type="file" name="Image" accept="MRIImage/">
+    <button type="submit">Detect Tumor</button>
+
+</form>
+</body>
+</html>
