@@ -4,16 +4,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="{% static 'src/output.css' %}" rel="stylesheet" />
+    <link href="{% static '/src/output.css' %}" rel="stylesheet" />
+    <link href="{% static '/src/images/favicon.ico' %}" rel="shortcut icon" type="image/png"/>
     <title>
-      {% block head_title %}Brain Tumor Detection{% endblock %}
+      {% block title %} {% endblock %}
     </title>
   </head>
   <body>
 
     <div>{% block content %} {% endblock %}</div>
+
   <script
     src="{% static 'tw-elements/dist/js/tw-elements.umd.min.js' %}"
-    type="text/javascript"></script>
-  </body>
+    type="text/javascript">
+  import {
+  Collapse,
+  Dropdown,
+  Ripple,
+  initTE,
+} from "tw-elements";
+
+initTE({ Collapse, Dropdown, Ripple  });
+
+  </script>
+</body>
+
 </html>

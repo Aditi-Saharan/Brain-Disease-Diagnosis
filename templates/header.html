@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+<!-- {% load static %} -->
+
+{% block title%}
+Brain Tumor Detection
+{% endblock%}
+
+{% block content %}
+<div class="top-0 h-20 border-b bg-white/50 backdrop-blur drop-shadow-md font-light">
+        <nav class="flex flex-row justify-between mx-3 mb-5 p-4 ">
+            <div class="font-semibold flex flex-row ">
+                <img src="{% static 'src/images/brain.png' %}" alt="" class="h-8 w-8 m-2"/><span class="p-3 font-po text-lg">CogniCare</span>
+            </div>
+            <ul class="navbar text-black flex flex-row font-bold">
+                <li class="hover:text-sky-700 p-3"><a href="/">Home</a></li>
+                <li class="hover:text-sky-700 p-3"><a href="/catalog">Catalog</a></li>
+                <li class="hover:text-sky-700 p-3"><a href="/contact">Contact us</a></li>
+                <li class="hover:text-sky-700 p-3"><a href="/about">About</a></li>
+            </ul>
+            <div class="font-semibold">
+                 <button class="rounded-md py-2 px-4 mr-2 hover:transition-all hover:bg-sky-200  hover:text-sky-600">Login</button>
+                 <button class="rounded-md bg-sky-500/75 py-2 px-4 text-sky-700 hover:bg-sky-200">Signup</button>
+            </div>
+
+            </nav>
+            </div>
+
+
+
+{% endblock %}
